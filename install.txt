@@ -1,0 +1,15 @@
+FPDF est constitu� des �l�ments suivants :
+
+- le fichier principal fpdf.php contenant la classe
+- les fichiers de d�finition des polices contenus dans le r�pertoire font
+
+Les fichiers de police sont indispensables d�s que l'on veut �crire du texte dans un document.
+S'ils ne sont pas accessibles, la m�thode SetFont() produira l'erreur suivante :
+
+FPDF error: Could not include font definition file
+
+
+Remarques :
+
+- Seuls les fichiers correspondant aux polices effectivement utilis�es sont n�cessaires
+- Les tutoriels fournis dans l'archive sont pr�ts � �tre ex�cut�s
