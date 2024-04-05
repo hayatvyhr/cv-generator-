@@ -1,1 +1,105 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae Form</title>
+    <style>
+        fieldset {
+            width: 550px;
+            margin: auto;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555; 
+        }
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #007bff; /* Blue color for legends */
+        }
+
+
+        .ipt label {
+            display: inline-block;
+            width: 200px;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 180px;
+            margin-bottom: 10px;
+        }
+
+        .ipt input {
+            width: 180px;
+            margin-bottom: 10px;
+        }
+        input[name="Telecharger"] {
+        background-color: blue; /* Green color */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px; /* Adjust the margin-top value as needed */
+        font-size: 16px;
+    }
+
+    </style>
+</head>
+<body>
+    <form action="index.php" method="post" enctype="multipart/form-data" id="myForm">
+        <fieldset>
+            <fieldset class="ipt">
+                <legend>Cordonnees Personnels</legend>
+                <label for="nom">Nom: </label>
+                <input type="text" name="nom" required>
+                <br>
+                <label for="prenom">Prenom:</label>
+                <input type="text" name="prenom" required>
+                <br>
+                <label for="age">Age:</label>
+                <input type="text" name="age" required>
+                <br>
+                <label for="telephone">Numero de Telephone:</label>
+                <input type="tel" name="telephone" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+            </fieldset>
+            <fieldset>
+                <legend>Photo</legend>
+                <label for="image">Photo:</label>
+                <input type="file" name="image">
+            </fieldset>
+            <fieldset>
+                <legend>Stage et Formation </legend>
+                <label for="stage">Stage</label>
+                <textarea name="stage" id="" cols="30" rows="2"></textarea>
+                <br>
+                <label for="formtion">Formation</label>
+                <textarea name="formation" id="" cols="30" rows="2"></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="Competence">Competence</label>
+                <textarea name="Competence" id="" cols="30" rows="2"></textarea>
+                <br>
+    <label for="centreintr">Centre d'interet</label>
+    <input type="text" name="centreintr">
+    <br>
+    <label for="langues">Langues</label>
+     <input type="text" name="langues">
+</fieldset>
+<input type="submit" name="Telecharger" value="Telecharger">
+
+</fieldset>
+</form>
+</body>
+</html>
+
+
