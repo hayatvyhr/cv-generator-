@@ -1,6 +1,6 @@
 <?php
 require 'fpdf.php';
-
+require 'index.html'
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get form data
     $nom = $_POST['nom'];
